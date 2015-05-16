@@ -135,7 +135,7 @@ fn handle_directories(dir: Vec<&String>) {
                     // dir[d + 2] is the extensions you want to convert TO
                     
                     //let filename = x.as_path().file_name().unwrap().to_str().unwrap().to_string();
-                    let file= x.as_path().to_str().unwrap().to_string();
+                    let file = x.to_str().unwrap().to_string();
                     
                     convert(file, dir[d + 1], dir[d + 2], &options);
                 }
